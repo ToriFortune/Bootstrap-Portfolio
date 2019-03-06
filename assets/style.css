@@ -1,6 +1,6 @@
 header{
     text-align: right;
-    background-color: #ffffff;
+    background-color: grey;
     border-color:#cccccc;    
     font-family: 'Times New Roman', Times, serif   
    
@@ -10,10 +10,12 @@ head{
     font-family: 'Times New Roman', Times, serif
 }
   body {
-    background-color: #ffffff;
-    border-collapse:#dddddd; 
+    background-color:aquamarine;
     font-size: 20px;
-    text-align: left;
+    text-align: right;
+    border-bottom: red; 
+
+
   }
     h1 {
         color: red;
