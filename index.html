@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+
+    </head>
 
 <body>
     <!-- General Layout-->
@@ -22,113 +24,120 @@
         <!--This shoul d contain about, portfolio and contact-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-link">
-                    <a href="index.html">ABOUT</a>
-                </li>
-                <br>
-                <li class="nav-link">
-                    <a href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <br>
-                <li class="nav-link">
-                    <a href="contact.html">CONTACT</a>
+                <div class="navitem">
+                    <li class="nav-link">
+                        <a href="index.html">ABOUT</a>
+                    </li>
+                    <br>
+                    <li class="nav-link">
+                        <a href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <br>
+                    <li class="nav-link">
+                        <a href="contact.html">CONTACT</a>
 
-                </li>
+                    </li>
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Explore</button>
-            </form>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Explore</button>
+        </form>
         </div>
     </nav>
 
     <!--Main content layout-->
-    
     <div class="container">
         <div class="row">
             <!--First Row Content-->
             <div class="col-md-12">
                 <div class="page-header">
                     <h1>Tori Olley, MSW, LCSW-C, LCSW, CSM</h1>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!--div/class/card copied from https://getbootstrap.com/docs/4.3/components/card/-->
-                            <div class="card" style="width: 10rem;">
-                                <img src="data:image/jpeg;base64,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"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="col-md-3">
-                            </div>
-
-                            <p1>
-                                <h1> ABOUT ME</h1>
-                                I am a mental health clinician, licensed in the Maryland and Texas. I was first exposed
-                                to
-                                software
-                                applications
-                                when I worked as an Analyst/Consul tant for a leading Electronic Medical Records system
-                                on
-                                several
-                                implementations. This gave me the opportunity to work with other programs which were
-                                integrated with the
-                                EMR I
-                                was working with. I found myself intrigued by computer systems and how a string of
-                                alphanumeric data
-                                coul d be so
-                                powerful .
-                                While managing projects, I am always captivated by the expertise of developers and their
-                                ability to
-                                translate
-                                everyday needs into program functionality. In a bid to understand the granul ar details
-                                that
-                                come with
-                                programming, I decided to enroll in a six-month bootcamp. While I continue to run a
-                                small
-                                private
-                                practice, I
-                                believe that a healthy understanding of programming language coul d make me a better
-                                clinician. The
-                                attention to
-                                detail is a skill required and possessed by programmers and clinicians alike.
-                            </p1>
-                        </div>
-                    </div>
                 </div>
-            </div>
+                <!--div/class/card copied from https://getbootstrap.com/docs/4.3/components/card/-->
+                <!--changed card width-->
+                <div class="card" style="width: 10rem;">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="col-md-12">
+                </div>
+                <h1> About Me</h1>
+                <p>
 
+                    I am a mental health clinician, licensed in the Maryland and Texas. I was first exposed
+                    to
+                    software
+                    applications
+                    when I worked as an Analyst/Consul tant for a leading Electronic Medical Records system
+                    on
+                    several
+                    implementations. This gave me the opportunity to work with other programs which were
+                    integrated with the
+                    EMR I
+                    was working with. I found myself intrigued by computer systems and how a string of
+                    alphanumeric data
+                    coul d be so
+                    powerful .
+                    While managing projects, I am always captivated by the expertise of developers and their
+                    ability to
+                    translate
+                    everyday needs into program functionality. In a bid to understand the granul ar details
+                    that
+                    come with
+                    programming, I decided to enroll in a six-month bootcamp. While I continue to run a
+                    small
+                    private
+                    practice, I
+                    believe that a healthy understanding of programming language coul d make me a better
+                    clinician. The
+                    attention to
+                    detail is a skill required and possessed by programmers and clinicians alike.
+
+                </p>
+
+            </div>
 
             <!--Second Row content-->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <p1>
-                        <h1>AREAS OF CLINCAL SPECIALIZATION</h1>
-                        <ul>Depression</ul>
-                        <ul>Anxiety</ul>
-                        <ul>Autism Spectrum Disorders</ul>
-                        <ul>PTSD</ul>
-                    </p1>
-                </div>
-            </div>
+<div class="container"> 
             <div class="row">
                 <div class="col-lg-12">
                     <br>
-                    <p3>
-                        <h1>AREAS OF EMR TECHNICAL EXPERTISE</h1>
-                        <br>
-                        <ul>Epic Inpatient Clindoc</ul>
-                        <ul>Epic Beacon</ul>
-                        <ul>Epic Stork</ul>
-                        <ul>Epic Beacon, Clinical Pathology</ul>
-                    </p3>
+                    <h2>Areas of Clinical Specialization</h2>
+                    <p>
+                       
+                                <br>
+                                <ul>Depression</ul>
+                                <ul>Post Traumatic Stress Disorder</ul>
+                                <ul>Autism Spectrum Disorders</ul>
+                                <ul>Anxiety</ul>
+                                <ul>Family Dysfunction. </ul>
 
+                    </p>
+                </div> 
+                </div>
+                </div>
+            </div>
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <p>
+                            <h2>Areas of EMR Technical Expertise</h2>
+                            <br>
+                            <ul>Epic Inpatient Clindoc</ul>
+                            <ul>Epic Beacon</ul>
+                            <ul>Epic Stork</ul>
+                            <ul>Epic Beacon, Clinical Pathology</ul>
+                        </p>
+
+                    </div>
+                </div>
                 </div>
 
             </div>
-
         </div>
-    </div>
     </div>
     </div>
 
